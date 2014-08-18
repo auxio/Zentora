@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sentora &gt; <# ui_tpl_username #></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="<# ui_tpl_assetfolderpath #>global-css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="<# ui_tpl_csspath #>" rel="stylesheet" type="text/css">
+		
+		<script src="<# ui_tpl_assetfolderpath #>js/jquery-1.11.1.min.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/jquery.cookie.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/jquery.sortable-custom.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/spin.min.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/sentora.js"></script>
+		
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		  <script src="<# ui_tpl_assetfolderpath #>js/html5shiv.js"></script>
+		<![endif]-->
+	
+		<!-- Favicons -->
+		<link rel="apple-touch-icon-precomposed" sizes="57x57"   href="<# ui_tpl_assetfolderpath #>img/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<# ui_tpl_assetfolderpath #>img/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72"   href="<# ui_tpl_assetfolderpath #>img/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<# ui_tpl_assetfolderpath #>img/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="icon" href="<# ui_tpl_assetfolderpath #>img/ico/fav16.png"  sizes="16x16"   type="image/png">
+		<link rel="icon" href="<# ui_tpl_assetfolderpath #>img/ico/fav32.png"  sizes="32x32"   type="image/png">
+		<link rel="icon" href="<# ui_tpl_assetfolderpath #>img/ico/fav48.png"  sizes="48x48"   type="image/png">
+		<link rel="icon" href="<# ui_tpl_assetfolderpath #>img/ico/fav64.png"  sizes="64x64"   type="image/png">
+		<link rel="icon" href="<# ui_tpl_assetfolderpath #>img/ico/fav128.png" sizes="128x128" type="image/png">
+		<link rel="icon" href="<# ui_tpl_assetfolderpath #>img/ico/fav32.png">
+		<!--[if IE]><link rel="shortcut icon" href="<# ui_tpl_assetfolderpath #>img/ico/favicon.ico"><![endif]-->
+
+		<meta name="msapplication-TileColor" content="#222222">
+		<meta name="msapplication-TileImage" content="<# ui_tpl_assetfolderpath #>img/ico/fav144.png">
+
+	</head>
+	<body>
+		<!-- BEGIN ZLOADER PROGRESSBAR DIV -->
+			<div class="zloader_overlay" id="zloader_overlay" style="display:none;"></div>
+			<div class="zloader" id="zloader" style="display:none;">
+				<div class="zloader_content" id="zloader_content"></div>
+			</div>
+		<!-- END ZLOADER PROGRESSBAR DIV -->
+
+		<div class="navbar navbar-default navbar-static-top subtheme">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="./" target="_self" class="navbar-brand"><img class="sentora_logo" src="<# ui_tpl_assetfolderpath #>img/sentora_logo.png" border="0" width="165" height="40"/></a>
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right">
+							<# ui_tpl_modulelistznavbar #>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-3 visible-lg sidebar">
+					
+					<div class="list-group">
+                        <div class="list-group-item sidebar-top subtheme">
+                            <h3 class="list-group-item-heading text-center sidebar-heading">Search</h3>
+                        </div>
+						<div href="./" class="list-group-item disable-hover-effect">
+                            <div id="module-search-wrap" class="visible-lg visible-desktop">
+								<input type="text" id="module-search" data-provide="typeahead" placeholder="Search" autocomplete="off">
+							</div>
+                        </div>
+                    </div>
+                    
+					<div class="list-group">
+                        <div class="list-group-item sidebar-top subtheme">
+                            <h3 class="list-group-item-heading text-center sidebar-heading">Notices</h3>
+                        </div>
+						<a href="./" class="list-group-item"  data-toggle="tooltip" data-placement="top" data-original-title="Homepage of your Sentora control panel." data-delay='{"show":"1000", "hide":"10"}'>
+                            <p class="sidebar-notice">Homepage</p>
+                        </a>
+						<a href="http://sentora.io/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Homepage" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+                            <p class="sidebar-notice">Sentora</p>
+                        </a>
+						<a href="http://forums.sentora.io/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Forums" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+                            <p class="sidebar-notice">Forums</p>
+                        </a>
+						<a href="http://docs.sentora.io/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Documentation" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+                            <p class="sidebar-notice">Documentation</p>
+                        </a>
+                    </div>
+					
+					<div class="list-group">
+                        <div class="list-group-item sidebar-top subtheme">
+                            <h3 class="list-group-item-heading text-center sidebar-heading">Account Information</h3>
+                        </div>
+						<div class="list-group-item">
+                            <p class="sidebar-header"><: Username :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_username #></p>
+                        </div>
+                         <div class="list-group-item">
+                            <p class="sidebar-header"><: Full name :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_fullname #></p>
+                        </div>
+                         <a href="./?module=my_account" data-toggle="tooltip" data-placement="top" data-original-title="<: Click here to update your contact email address :>" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+                            <p class="sidebar-header"><: Email Address :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_email #></p>
+                        </a>
+                         <div class="list-group-item">
+                            <p class="sidebar-header"><: Package name :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_packagename #></p>
+                        </div>
+                         <div class="list-group-item">
+                            <p class="sidebar-header"><: Account type :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_usergroup #></p>
+                        </div>
+						 <div class="list-group-item">
+                            <p class="sidebar-header"><: Last Logon :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_lastlogon #></p>
+                        </div>
+						 <div class="list-group-item">
+                            <p class="sidebar-header"><: Disk Quota :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_progbardisk #></p>
+							<p class="sidebar-text text-info pull-right"><img src="<# ui_tpl_assetfolderpath #>img/drop.gif" width="10" height="10" /> <# ui_tpl_usagediskspace #> / <# ui_tpl_quotadiskspace #></p>
+                        </div>
+						 <div class="list-group-item">
+                            <p class="sidebar-header"><: Bandwidth Quota :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_progbarbandwidth #></p>
+							<p class="sidebar-text text-info pull-right"><img src="<# ui_tpl_assetfolderpath #>img/drop.gif" width="10" height="10" /> <# ui_tpl_usagebandwidth #> / <# ui_tpl_quotabandwidth #></p>
+                        </div>
+						 <div class="list-group-item">
+                            <p class="sidebar-header"><: Domains :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_useddomains #> / <# ui_tpl_totaldomains #></p>
+                        </div>
+						 <div class="list-group-item">
+                            <p class="sidebar-header"><: Sub-domains :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_usedsubdomains #> / <# ui_tpl_totalsubdomains #></p>
+                        </div>
+						 <div class="list-group-item">
+                            <p class="sidebar-header"><: Parked domains :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_usedparkeddomains #> / <# ui_tpl_totalparkeddomains #></p>
+                        </div>
+						 <div class="list-group-item">
+                            <p class="sidebar-header"><: FTP accounts :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_usedftp #> / <# ui_tpl_totalftp #></p>
+                        </div>
+						 <div class="list-group-item">
+                            <p class="sidebar-header"><: MySQL&reg; databases :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_usedmysql #> / <# ui_tpl_totalmysql #></p>
+                        </div>
+						 <div class="list-group-item">
+                            <p class="sidebar-header"><: Email Accounts :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_usedemail #> / <# ui_tpl_totalemail #></p>
+                        </div>
+						 <div class="list-group-item">
+                            <p class="sidebar-header"><: Email Forwarders :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_usedforwarders #> / <# ui_tpl_totalforwarders #></p>
+                        </div>
+						<div class="list-group-item">
+                            <p class="sidebar-header"><: Distribution lists :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_useddistlists #> / <# ui_tpl_totaldistlists #></p>
+                        </div>
+                    </div>
+					
+					<div class="list-group">
+                        <div class="list-group-item sidebar-top subtheme">
+                            <h3 class="list-group-item-heading text-center sidebar-heading">Server Information</h3>
+                        </div>
+						<div class="list-group-item">
+                            <p class="sidebar-header"><: Your IP :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_clientipaddress #></p>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="sidebar-header"><: Server IP :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_serveripaddress #></p>
+                        </div>
+                        <!-- Disabled in Sentora???
+						<div class="list-group-item">
+                            <p class="sidebar-header"><: Server OS :>:</p>
+                            <p class="sidebar-text text-info pull-right"><img src="<# ui_tpl_assetfolderpath #>img/os_icons/<# ui_tpl_serverosname #>.png" width="16" height="16" /><# ui_tpl_serverosname #></p>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="sidebar-header"><: Apache Version :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_apacheversion #></p>
+                        </div>
+						-->
+                        <div class="list-group-item">
+                            <p class="sidebar-header"><: PHP Version :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_phpversion #></p>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="sidebar-header"><: MySQL Version :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_mysqlversion #></p>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="sidebar-header"><: Sentora Version :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_zpanelversion #></p>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="sidebar-header"><: Theme name :>:</p>
+                            <p class="sidebar-text text-info pull-right">Zentora</p>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="sidebar-header"><: Theme version :>:</p>
+                            <p class="sidebar-text text-info pull-right">1.0.2</p>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="sidebar-header"><: Server uptime :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_serveruptime #></p>
+                        </div>
+                        <div class="list-group-item">
+                            <p class="sidebar-header"><: Server date :>:</p>
+                            <p class="sidebar-text text-info pull-right"><# ui_tpl_date #></p>
+                        </div>
+                    </div>
+					
+                </div>
+                
+                <div class="col-lg-9">
+					<# ui_tpl_notice #>
+					<# ui_tpl_shadowbar #>
+					<# ui_tpl_breadcrumbs #>
+					<# ui_tpl_modulelist2column #>
+					<# ui_tpl_module #>      
+                </div>
+				
+            </div>
+        </div>
+        
+        <div class="navbar navbar-default navbar-static-bottom subtheme">
+			<div class="container">
+				<p class="navbar-text pull-left footerImg">Powered by <a href="http://sentora.io/" data-toggle="tooltip" data-placement="top" data-original-title="Sentora - The open-source web hosting panel." target="_blank"><img class="sentora_logo_sig" src="<# ui_tpl_assetfolderpath #>img/sentora_logo_sig.png" border="0" width="105" height="25"/></a></p>
+				<p class="navbar-text pull-right footerImg">Theme by <a href="http://auxio.eu/" data-toggle="tooltip" data-placement="top" data-original-title="Zentora theme is powered by Auxio!" target="_blank"><img src="<# ui_tpl_assetfolderpath #>img/auxio-logo.png" border="0" width="25" height="25"/></a></p><!-- please do NOT remove the Theme powered by auxio link! This theme is free for everyone so don't be a dick-head by removing this link -->
+			</div>		
+		</div>
+		
+		<script src="<# ui_tpl_assetfolderpath #>js/bootstrap-transition.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/bootstrap-alert.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/bootstrap-modal.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/bootstrap-dropdown.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/bootstrap-scrollspy.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/bootstrap-tab.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/bootstrap-tooltip.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/bootstrap-popover.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/bootstrap-button.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/bootstrap-collapse.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/bootstrap-carousel.js"></script>
+		<script src="<# ui_tpl_assetfolderpath #>js/typeahead.min.js"></script>
+		<!--<script src="<# ui_tpl_assetfolderpath #>js/init.js"></script>-->
+		
+		<script>
+			/* making the module <li> click-able with cursor change */
+			$('.module-box-body ul li').css( 'cursor', 'pointer' );
+			$('.module-box-body ul li').click(function(){
+				window.location=$(this).children("a:first").attr("href");
+				 return false;
+			});
+			
+			/* setup and activate tooltips with delays (i know its a dirty hack!) */
+			$('.module-box-body ul li').hover(function(){
+				var title = $(this).children("a:first").attr("title");
+				$(this).attr( "data-toggle", 'tooltip' );
+				$(this).attr( "rel", 'tooltip' );
+				$(this).attr( "data-placement", 'top' );
+				$(this).attr( "data-original-title", title );
+				$(this).attr( "data-delay", '{"show":"1000", "hide":"10"}' );
+				$(this).children("a:first").removeAttr( "data-original-title");
+				$(this).children("a:first").removeAttr( "title");
+			});
+			$("body").tooltip({ selector: '[data-toggle="tooltip"]'	});
+			
+			$(function(){
+			   $('[rel="tooltip"]').tooltip();
+			});
+		</script>
+		
+		<!-- Modulelist for Typeahead -->
+		<script>
+		  var moduleJsonData = <# ui_tpl_modulelistjson #>;
+		  zPanel.modules.typeAhead(moduleJsonData);
+		</script>
+
+		<# ui_controllerdebug #>
+	</body>
+</html>

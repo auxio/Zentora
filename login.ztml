@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sentora &gt;  Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="/etc/styles/Zentora/global-css/bootstrap.min.css" rel="stylesheet">
+		<link href="/etc/styles/Zentora/css/default.css" rel="stylesheet" type="text/css">
+		<link href="/etc/styles/Zentora/global-css/login.css" rel="stylesheet" type="text/css">
+		
+		<script src="/etc/styles/Zentora/js/jquery-1.11.1.min.js"></script>
+		<script src="/etc/styles/Zentora/js/jquery.cookie.js"></script>
+		<script src="/etc/styles/Zentora/js/jquery.sortable-custom.js"></script>
+		<script src="/etc/styles/Zentora/js/spin.min.js"></script>
+		<script src="/etc/styles/Zentora/js/sentora.js"></script>
+		
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		  <script src="<# ui_tpl_assetfolderpath #>js/html5shiv.js"></script>
+		<![endif]-->
+	
+		<!-- Favicons -->
+		<link rel="apple-touch-icon-precomposed" sizes="57x57"   href="/etc/styles/Zentora/img/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/etc/styles/Zentora/img/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72"   href="/etc/styles/Zentora/img/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/etc/styles/Zentora/img/ico/apple-touch-icon-144-precomposed.png">
+
+		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav16.png"  sizes="16x16"   type="image/png">
+		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav32.png"  sizes="32x32"   type="image/png">
+		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav48.png"  sizes="48x48"   type="image/png">
+		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav64.png"  sizes="64x64"   type="image/png">
+		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav128.png" sizes="128x128" type="image/png">
+
+		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav32.png">
+		<!--[if IE]><link rel="shortcut icon" href="<# ui_tpl_assetfolderpath #>img/ico/favicon.ico"><![endif]-->
+
+		<meta name="msapplication-TileColor" content="#222222">
+		<meta name="msapplication-TileImage" content="/etc/styles/Zentora/img/ico/fav144.png">
+
+		<!-- Anti ClickJacking protection! -->
+		<style id="antiClickjack">body{display:none !important;}</style>
+		<script type="text/javascript">
+			if (self === top) {
+				var antiClickjack = document.getElementById("antiClickjack");
+				antiClickjack.parentNode.removeChild(antiClickjack);
+			} else {
+				top.location = self.location;
+			}
+		</script>
+		<!-- End of Anti ClickJacking protection! -->
+		
+		<!-- let the alert go away after x sec. -->
+		<script language="JavaScript" type="text/javascript">
+			$(document).ready(function(){
+				$('.alert').delay(5000).fadeOut('slow');
+			});
+		</script>
+
+	</head>
+	<body>
+
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="./" target="_self" class="navbar-brand"><img src="/etc/styles/Zentora/img/sentora_logo.png" border="0" width="165" height="40"/></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row row-centered">
+				<div class="col-xs-4 login-wrapper">
+					<div class="alert-holder">
+						<?php
+							if (isset($_GET['invalidlogin'])) {
+								echo '
+								<div class="alert alert-danger fade in">
+									<button type="button" class="close" data-dismiss="alert">&times;</button>
+									Invalid Username or Password!
+								</div>';
+							}
+							if (isset($_GET['loggedout'])) {
+								echo '
+								<div class="alert alert-success fade in">
+									<button type="button" class="close" data-dismiss="alert">&times;</button>
+									Logout Successful!
+								</div>';
+							}
+							if(isset($_GET['sessionIssue'])){
+								echo '
+								<div class="alert alert-danger fade in">
+									<button type="button" class="close" data-dismiss="alert">&times;</button>
+									You have been logged out, please login again.
+								</div>';
+							}
+							if (isset($_GET['passwordreset'])) {
+								echo '
+								<div class="alert alert-success fade in">
+									<button type="button" class="close" data-dismiss="alert">&times;</button>
+									Your password has been reset!
+								</div>';
+							}
+							if (isset($_GET['resetkey']) && ctype_alnum($_GET['resetkey'])) { 
+								echo '
+								<div id="msgMatchErr" class="alert alert-danger fade in" style="display: none;">
+									<button type="button" class="close" data-dismiss="alert">&times;</button>
+									Passwords are different.
+								</div>';
+							} 
+						?>
+					</div>
+					<div class="login-header">
+						<a href="./" target="_self" ><img src="/etc/styles/Zentora/img/sentora_logo.png" border="0" width="165" height="40"/></a>
+					</div>
+					<div class="panel login-body row">
+						<?php if (isset($_GET['resetkey']) && ctype_alnum($_GET['resetkey'])) { ?>
+						
+							<!-- Reset password form -->
+								<form role="form" action="?resetkey=<?php echo $_GET['resetkey']; ?>" method="post" name="frmZConfirm" id="frmZConfirm">
+									<div class="form-group">
+										<label for="inputNewPass1">New Password:</label>
+										<div class="input-group merged">
+											<span class="input-group-addon"><i class="icon-key-1"></i></span>
+											<input type="text" class="form-control" id="inputNewPass1" name="inNewPass" placeholder="New Password" required>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputNewPass2">Confirm Password:</label>
+										<div class="input-group merged">
+											<span class="input-group-addon"><i class="icon-key-1"></i></span>
+											<input type="text" class="form-control" id="inputNewPass2" name="inNewPass2" placeholder="Confirm Password" required>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inPassword">E-mail:</label>
+										<div class="input-group merged">
+											<span class="input-group-addon"><i class="icon-mail"></i></span>
+											<input type="text" class="form-control" id="inPassword" name="inConfEmail" placeholder="Email" required>
+										</div>
+									</div>
+									<button type="submit" class="btn btn-primary pull-right btn-margin" name="btnReset" value="Reset">Submit</button>
+									<?php echo runtime_csfr::Token(); ?>
+								</form>
+							<!-- END Reeset password form -->
+							
+						<?php } else {?>
+							
+							<!-- Forgot password form -->
+							<form role="form" method="post" name="frmZForgot" id="frmZForgot" style="display: none;">
+								<div class="form-group">
+									<label for="inPassword">E-mail:</label>
+									<div class="input-group merged">
+										<span class="input-group-addon"><i class="icon-mail"></i></span>
+										<input type="text" class="form-control" id="inputEmail" name="inForgotPassword" placeholder="Email" required>
+									</div>
+								</div>
+								<div class="form-group text-right">
+									<a href="javascript:void(0);" id="backtologin">(Back To Login)</a>
+								</div>
+								<button type="submit" class="btn btn-primary pull-right btn-margin" name="sublogin2" value="LogIn">Sign in</button>
+								<?php echo runtime_csfr::Token(); ?>
+							</form>
+							<!-- END Forgot password form -->
+
+							<!-- Login form -->
+							<form role="form" method="post" name="frmZLogin" id="frmZLogin">
+								<div class="form-group">
+									<label for="inputUsername">Username:</label>
+									<div class="input-group merged">
+										<span class="input-group-addon"><i class="icon-user-male"></i></span>
+										<input type="text" class="form-control" id="inputUsername" name="inUsername" placeholder="Username" required>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inPassword">Password:</label>
+									<div class="input-group merged">
+										<span class="input-group-addon"><i class="icon-key-1"></i></span>
+										<input type="password" class="form-control" id="inPassword" name="inPassword" placeholder="Password" required>
+									</div>
+								</div>
+								<div class="form-group text-right">
+									<a href="javascript:void(0);" id="forgotpw">(forgot password)</a>
+								</div>
+								<div class="form-group">
+									<input type="checkbox" data-label="Remember Me" name="inRemember" value="1">Remember me
+								</div>
+								<div class="form-group">
+									<input type="checkbox" data-label="Enable Session Security" name="inSessionSecurity" checked>Enable Session Security
+								</div>
+								<button type="submit" class="btn btn-primary pull-right btn-margin" name="sublogin2" value="LogIn">Sign in</button>
+								<?php echo runtime_csfr::Token(); ?>
+							</form>
+							<!-- END Login form -->	
+							
+						<?php }  ?>
+					</div>
+				</div>	
+			</div>
+        </div>
+		
+        <div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text pull-left footerImg">Powered by <a href="http://sentora.io/" data-toggle="tooltip" data-placement="top" data-original-title="Sentora - The open-source web hosting panel." target="_blank"><img src="/etc/styles/Zentora/img/sentora_logo_sig.png" border="0" width="105" height="25"/></a></p>
+				<p class="navbar-text pull-right footerImg">Theme by <a href="http://auxio.eu/" data-toggle="tooltip" data-placement="top" data-original-title="Zentora theme is powered by Auxio!" target="_blank"><img src="/etc/styles/Zentora/img/auxio-logo.png" border="0" width="25" height="25"/></a></p>
+			</div>			
+		</div>
+		
+		<script src="/etc/styles/Zentora/js/bootstrap-transition.js"></script>
+		<script src="/etc/styles/Zentora/js/bootstrap-alert.js"></script>
+		<script src="/etc/styles/Zentora/js/bootstrap-popover.js"></script>
+		<script src="/etc/styles/Zentora/js/bootstrap-button.js"></script>
+		<!--<script src="<# ui_tpl_assetfolderpath #>js/init.js"></script>-->
+		
+		<!-- Login form transitions -->
+		<script>
+			<?php if (isset($_GET['resetkey']) && ctype_alnum($_GET['resetkey'])) { ?>
+			$('#frmZConfirm').submit(function() {
+					$('#msgMatchErr').slideUp("slow");
+					if ( $('#inputNewPass1').val().length == 0 || $('#inputNewPass1').val() != $('#inputNewPass2').val() ) {
+							$('#msgMatchErr').slideDown("slow");
+							return false;
+					}
+					return true;
+			});
+			<?php  }else{ ?>
+			$('#forgotpw').click(function() {
+				$('#frmZLogin').slideUp('slow', function() {
+					$('#frmZForgot').slideDown("slow");
+				});
+			});
+			$('#backtologin').click(function() {
+				$('#frmZForgot').slideUp('slow', function() {
+					$('#frmZLogin').slideDown("slow");
+				});
+			});
+			$('#backtologin2').click(function() {
+				$('#frmZConfirm').slideUp('slow', function() {
+					$('#frmZLogin').slideDown("slow");
+				});
+			});
+			<?php } ?>
+			
+			$("body").tooltip({ selector: '[data-toggle="tooltip"]'	});
+
+			$(function(){
+			   $('[rel="tooltip"]').tooltip();
+			});
+		</script>
+
+	</body>
+</html>

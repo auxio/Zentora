@@ -1,0 +1,59 @@
+/* Login Page Stylesheet */
+
+.login-wrapper {
+	z-index: 9999;
+	height: 500px;
+	width: 290px;
+	padding: 0px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+  }
+  
+.login-header{
+	background-color: #f8f8f8;
+	border: 1px solid #e7e7e7;
+	padding-top: 15px;
+	height: 75px;
+	-webkit-border-radius: 4px 4px 0 0;
+	-moz-border-radius: 4px 4px 0 0;
+	border-radius: 4px 4px 0 0;
+}
+
+.login-header img{
+	display: block;
+    margin: 0 auto;
+}
+
+.login-body{
+	background-color: #fff;
+	border: 1px solid #e7e7e7;
+	margin: -1px 0 0 0;
+	padding: 15px 10px 15px 10px;;
+	-webkit-border-radius: 0 0 4px 4px;
+	-moz-border-radius: 0 0 4px 4px;
+	border-radius: 0 0 4px 4px;
+}
+
+.alert-holder{
+	height: 60px;
+}
+
+label {
+	padding-bottom: 5px;
+}
+
+.form-group {
+	margin-bottom: 10px;
+}
+
+.btn-margin{
+	margin: 15px 0 5px 0; 
+}
+
+input[type="checkbox"] {
+	margin: 0 20px;
+}

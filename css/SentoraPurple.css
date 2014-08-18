@@ -1,0 +1,24 @@
+@import url("default.css");
+
+.subtheme, .module-box-title, .panel-heading {
+	background-color: #333366;
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #e2e2e2;
+}
+
+.sentora_logo{
+	background: url(/etc/styles/Zentora/img/sentora_logo_dbg.png) no-repeat;
+	padding-left: 165px;
+}
+
+.sentora_logo_sig{
+	background: url(/etc/styles/Zentora/img/sentora_logo_sig_dbg.png) no-repeat;
+	padding-left: 105px;
+} 
