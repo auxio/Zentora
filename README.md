@@ -1,12 +1,12 @@
 #Zentora Theme  
 
 * Version: 1.0.1
-* [Forums](http://forums.sentora.io/) for comments, discussion, more information and community support.
+* [Forums](http://forums.sentora.io/showthread.php?tid=160) for comments, discussion, more information and community support.
 
 
 ##Description
 
-A light, clean, simple and trying to be professional looking Bootstrap based theme for [Sentora](http://forums.sentora.io/) 10.1.x.
+A light, clean, simple and trying to be professional looking Bootstrap based theme for [Sentora](http://forums.sentora.io/) 1.0.0.
 
 ##Downloading Zentora
 
@@ -38,7 +38,7 @@ This theme uses:
 
 ##Getting support
 
-If you have a question of found a bug you are free to comment in [this thread](http://forums.sentora.io/) on the [Sentora forums](http://forums.sentora.io/).
+If you have a question of found a bug you are free to comment in [this thread](http://forums.sentora.io/showthread.php?tid=160) on the [Sentora forums](http://forums.sentora.io/).
 
 ##Version updates
 
