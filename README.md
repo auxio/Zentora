@@ -6,7 +6,7 @@
 
 ##Description
 
-A light, clean, simple and trying to be professional looking Bootstrap based theme for [Sentora](http://forums.sentora.io/) 1.0.0.
+A light, clean, simple and trying to be professional looking Bootstrap based theme for [Sentora](http://sentora.io/).
 
 ##Downloading Zentora
 
