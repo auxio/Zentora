@@ -1,6 +1,6 @@
 #Zentora Theme  
 
-* Version: 1.0.1
+* Version: 1.0.2
 * [Forums](http://forums.sentora.io/showthread.php?tid=160) for comments, discussion, more information and community support.
 
 
@@ -48,6 +48,10 @@ If you have a question of found a bug you are free to comment in [this thread](h
 
 1.0.1
 * Fixed non-standard spaces bug.
+
+1.0.2
+* Fixed button spacing and z-index from search wrapper, version number changed to 1.0.2.
+* rebranded ZstyleX to Zentora, version number is still 10.0.2.
 
 ##WARRANTY
 
