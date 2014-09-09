@@ -82,13 +82,13 @@
 						<a href="./" class="list-group-item"  data-toggle="tooltip" data-placement="top" data-original-title="Homepage of your Sentora control panel." data-delay='{"show":"1000", "hide":"10"}'>
                             <p class="sidebar-notice">Homepage</p>
                         </a>
-						<a href="http://sentora.io/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Homepage" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+						<a href="http://sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Homepage" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
                             <p class="sidebar-notice">Sentora</p>
                         </a>
-						<a href="http://forums.sentora.io/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Forums" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+						<a href="http://forums.sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Forums" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
                             <p class="sidebar-notice">Forums</p>
                         </a>
-						<a href="http://docs.sentora.io/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Documentation" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+						<a href="http://docs.sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Documentation" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
                             <p class="sidebar-notice">Documentation</p>
                         </a>
                     </div>
@@ -232,7 +232,7 @@
         
         <div class="navbar navbar-default navbar-static-bottom subtheme">
 			<div class="container">
-				<p class="navbar-text pull-left footerImg">Powered by <a href="http://sentora.io/" data-toggle="tooltip" data-placement="top" data-original-title="Sentora - The open-source web hosting panel." target="_blank"><img class="sentora_logo_sig" src="<# ui_tpl_assetfolderpath #>img/sentora_logo_sig.png" border="0" width="105" height="25"/></a></p>
+				<p class="navbar-text pull-left footerImg">Powered by <a href="http://sentora.org/" data-toggle="tooltip" data-placement="top" data-original-title="Sentora - The open-source web hosting panel." target="_blank"><img class="sentora_logo_sig" src="<# ui_tpl_assetfolderpath #>img/sentora_logo_sig.png" border="0" width="105" height="25"/></a></p>
 				<p class="navbar-text pull-right footerImg">Theme by <a href="http://auxio.eu/" data-toggle="tooltip" data-placement="top" data-original-title="Zentora theme is powered by Auxio!" target="_blank"><img src="<# ui_tpl_assetfolderpath #>img/auxio-logo.png" border="0" width="25" height="25"/></a></p><!-- please do NOT remove the Theme powered by auxio link! This theme is free for everyone so don't be a dick-head by removing this link -->
 			</div>		
 		</div>

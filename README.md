@@ -1,12 +1,12 @@
 #Zentora Theme  
 
 * Version: 1.0.2
-* [Forums](http://forums.sentora.io/showthread.php?tid=160) for comments, discussion, more information and community support.
+* [Forums](http://forums.sentora.org/showthread.php?tid=160) for comments, discussion, more information and community support.
 
 
 ##Description
 
-A light, clean, simple and trying to be professional looking Bootstrap based theme for [Sentora](http://sentora.io/).
+A light, clean, simple and trying to be professional looking Bootstrap based theme for [Sentora](http://sentora.org/).
 
 ##Downloading Zentora
 
@@ -38,7 +38,7 @@ This theme uses:
 
 ##Getting support
 
-If you have a question of found a bug you are free to comment in [this thread](http://forums.sentora.io/showthread.php?tid=160) on the [Sentora forums](http://forums.sentora.io/).
+If you have a question of found a bug you are free to comment in [this thread](http://forums.sentora.org/showthread.php?tid=160) on the [Sentora forums](http://forums.sentora.org/).
 
 ##Version updates
 
@@ -51,7 +51,7 @@ If you have a question of found a bug you are free to comment in [this thread](h
 
 1.0.2
 * Fixed button spacing and z-index from search wrapper, version number changed to 1.0.2.
-* rebranded ZstyleX to Zentora, version number is still 10.0.2.
+* re-branded ZstyleX to Zentora, version number is still 10.0.2.
 
 ##WARRANTY
 
