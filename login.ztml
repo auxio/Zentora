@@ -61,7 +61,7 @@
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="./" target="_self" class="navbar-brand"><img src="/etc/styles/Zentora/img/sentora_logo.png" border="0" width="165" height="40"/></a>
+					<a href="./" target="_self" class="navbar-brand"><img src="/etc/styles/Zentora/img/logos/sentora_logo.png" border="0" width="165" height="40"/></a>
 				</div>
 			</div>
 		</div>
@@ -109,7 +109,7 @@
 						?>
 					</div>
 					<div class="login-header">
-						<a href="./" target="_self" ><img src="/etc/styles/Zentora/img/sentora_logo.png" border="0" width="165" height="40"/></a>
+						<a href="./" target="_self" ><img src="/etc/styles/Zentora/img/logos/sentora_logo.png" border="0" width="165" height="40"/></a>
 					</div>
 					<div class="panel login-body row">
 						<?php if (isset($_GET['resetkey']) && ctype_alnum($_GET['resetkey'])) { ?>
@@ -199,8 +199,8 @@
 		
         <div class="navbar navbar-default navbar-fixed-bottom">
 			<div class="container">
-				<p class="navbar-text pull-left footerImg">Powered by <a href="http://sentora.org/" data-toggle="tooltip" data-placement="top" data-original-title="Sentora - The open-source web hosting panel." target="_blank"><img src="/etc/styles/Zentora/img/sentora_logo_sig.png" border="0" width="105" height="25"/></a></p>
-				<p class="navbar-text pull-right footerImg">Theme by <a href="http://auxio.eu/" data-toggle="tooltip" data-placement="top" data-original-title="Zentora theme is powered by Auxio!" target="_blank"><img src="/etc/styles/Zentora/img/auxio-logo.png" border="0" width="25" height="25"/></a></p>
+				<p class="navbar-text pull-left footerImg">Powered by <a href="http://sentora.org/" data-toggle="tooltip" data-placement="top" data-original-title="Sentora - The open-source web hosting panel." target="_blank"><img src="/etc/styles/Zentora/img/logos//sentora_logo_sig.png" border="0" width="105" height="25"/></a></p>
+				<p class="navbar-text pull-right footerImg">Theme by <a href="http://auxio.eu/" data-toggle="tooltip" data-placement="top" data-original-title="Zentora theme is powered by Auxio!" target="_blank"><img src="/etc/styles/Zentora/img/logos//auxio-logo.png" border="0" width="25" height="25"/></a></p>
 			</div>			
 		</div>
 		

@@ -1,6 +1,6 @@
 #Zentora Theme  
 
-* Version: 1.0.2
+* Version: 1.0.3
 * [Forums](http://forums.sentora.org/showthread.php?tid=160) for comments, discussion, more information and community support.
 
 
