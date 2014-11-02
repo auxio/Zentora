@@ -133,7 +133,7 @@ table {
 .icon-phpsysinfo:before
 .icon-shadowing:before
 .icon-updates:before
-.icon-zpanelconfig:before
+.icon-sentoraconfig:before
 .icon-news:before
 
 .icon-backupmgr:before
@@ -217,7 +217,7 @@ table {
 .icon-services:before,
 .icon-signal-1:before { content: '\e770'; }
 
-.icon-zpanelconfig:before,
+.icon-sentoraconfig:before,
 .icon-cog-1:before { content: '\e801'; }
 
 .icon-news:before,
