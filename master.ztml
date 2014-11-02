@@ -64,40 +64,40 @@
 			<div class="row">
                 <div class="col-lg-3 visible-lg sidebar">
 					
-			<div class="list-group">
+					<div class="list-group">
                         <div class="list-group-item sidebar-top subtheme">
                             <h3 class="list-group-item-heading text-center sidebar-heading">Search</h3>
                         </div>
-			<div href="./" class="list-group-item disable-hover-effect">
-                            <div id="module-search-wrap" class="visible-lg visible-desktop">
-				<input type="text" id="module-search" data-provide="typeahead" placeholder="Search" autocomplete="off">
-				</div>
-                        </div>
+						<div href="./" class="list-group-item disable-hover-effect">
+										<div id="module-search-wrap" class="visible-lg visible-desktop">
+							<input type="text" id="module-search" data-provide="typeahead" placeholder="Search" autocomplete="off">
+							</div>
+						</div>
                     </div>
                     
-			<div class="list-group">
+					<div class="list-group">
                         <div class="list-group-item sidebar-top subtheme">
                             <h3 class="list-group-item-heading text-center sidebar-heading">Notices</h3>
                         </div>
-			<a href="./" class="list-group-item"  data-toggle="tooltip" data-placement="top" data-original-title="Homepage of your Sentora control panel." data-delay='{"show":"1000", "hide":"10"}'>
+						<a href="./" class="list-group-item"  data-toggle="tooltip" data-placement="top" data-original-title="Homepage of your Sentora control panel." data-delay='{"show":"1000", "hide":"10"}'>
                             <p class="sidebar-notice">Homepage</p>
                         </a>
-			<a href="http://sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Homepage" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+						<a href="http://sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Homepage" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
                             <p class="sidebar-notice">Sentora</p>
                         </a>
-			<a href="http://forums.sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Forums" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+						<a href="http://forums.sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Forums" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
                             <p class="sidebar-notice">Forums</p>
                         </a>
-			<a href="http://docs.sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Documentation" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+						<a href="http://docs.sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Documentation" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
                             <p class="sidebar-notice">Documentation</p>
                         </a>
                     </div>
 					
-			<div class="list-group">
+					<div class="list-group">
                         <div class="list-group-item sidebar-top subtheme">
                             <h3 class="list-group-item-heading text-center sidebar-heading">Account Information</h3>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: Username :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_username #></p>
                         </div>
@@ -117,59 +117,59 @@
                             <p class="sidebar-header"><: Account type :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_usergroup #></p>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: Last Logon :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_lastlogon #></p>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: Disk Quota :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_progbardisk #></p>
 							<p class="sidebar-text text-info pull-right"><img src="<# ui_tpl_assetfolderpath #>img/drop.gif" width="10" height="10" /> <# ui_tpl_usagediskspace #> / <# ui_tpl_quotadiskspace #></p>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: Bandwidth Quota :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_progbarbandwidth #></p>
 							<p class="sidebar-text text-info pull-right"><img src="<# ui_tpl_assetfolderpath #>img/drop.gif" width="10" height="10" /> <# ui_tpl_usagebandwidth #> / <# ui_tpl_quotabandwidth #></p>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: Domains :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_useddomains #> / <# ui_tpl_totaldomains #></p>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: Sub-domains :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_usedsubdomains #> / <# ui_tpl_totalsubdomains #></p>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: Parked domains :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_usedparkeddomains #> / <# ui_tpl_totalparkeddomains #></p>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: FTP accounts :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_usedftp #> / <# ui_tpl_totalftp #></p>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: MySQL&reg; databases :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_usedmysql #> / <# ui_tpl_totalmysql #></p>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: Email Accounts :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_usedemail #> / <# ui_tpl_totalemail #></p>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: Email Forwarders :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_usedforwarders #> / <# ui_tpl_totalforwarders #></p>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: Distribution lists :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_useddistlists #> / <# ui_tpl_totaldistlists #></p>
                         </div>
                     </div>
 					
-			<div class="list-group">
+					<div class="list-group">
                         <div class="list-group-item sidebar-top subtheme">
                             <h3 class="list-group-item-heading text-center sidebar-heading">Server Information</h3>
                         </div>
-			<div class="list-group-item">
+						<div class="list-group-item">
                             <p class="sidebar-header"><: Your IP :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_clientipaddress #></p>
                         </div>
