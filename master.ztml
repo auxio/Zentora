@@ -124,12 +124,12 @@
 						<div class="list-group-item">
                             <p class="sidebar-header"><: Disk Quota :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_progbardisk #></p>
-							<p class="sidebar-text text-info pull-right"><img src="<# ui_tpl_assetfolderpath #>img/drop.gif" width="10" height="10" /> <# ui_tpl_usagediskspace #> / <# ui_tpl_quotadiskspace #></p>
+							<p class="sidebar-text text-info pull-right"><img src="<# ui_tpl_assetfolderpath #>img/misc/drop.gif" width="10" height="10" /> <# ui_tpl_usagediskspace #> / <# ui_tpl_quotadiskspace #></p>
                         </div>
 						<div class="list-group-item">
                             <p class="sidebar-header"><: Bandwidth Quota :>:</p>
                             <p class="sidebar-text text-info pull-right"><# ui_tpl_progbarbandwidth #></p>
-							<p class="sidebar-text text-info pull-right"><img src="<# ui_tpl_assetfolderpath #>img/drop.gif" width="10" height="10" /> <# ui_tpl_usagebandwidth #> / <# ui_tpl_quotabandwidth #></p>
+							<p class="sidebar-text text-info pull-right"><img src="<# ui_tpl_assetfolderpath #>img/misc/drop.gif" width="10" height="10" /> <# ui_tpl_usagebandwidth #> / <# ui_tpl_quotabandwidth #></p>
                         </div>
 						<div class="list-group-item">
                             <p class="sidebar-header"><: Domains :>:</p>
