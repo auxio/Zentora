@@ -278,7 +278,7 @@
 		<!-- Modulelist for Typeahead -->
 		<script>
 		  var moduleJsonData = <# ui_tpl_modulelistjson #>;
-		  zPanel.modules.typeAhead(moduleJsonData);
+		  Sentora.modules.typeAhead(moduleJsonData);
 		</script>
 
 		<# ui_controllerdebug #>
