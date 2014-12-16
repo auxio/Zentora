@@ -1,6 +1,6 @@
 #Zentora Theme  
 
-* Version: 1.0.4.1
+* Version: 1.0.5
 * [Forums](http://forums.sentora.org/showthread.php?tid=160) for comments, discussion, more information and community support.
 
 
@@ -55,12 +55,19 @@ If you have a question of found a bug you are free to comment in [this thread](h
 
 1.0.3
 * Standardised to new Sentora's structure policy.
+(special thanks to PS2Guy aka Nigel).
 
 1.0.4
 * Fixed renamed Zpanel.js 
 
 1.0.4.1
 * Fix dark theme logo paths
+
+1.0.5
+* Removed JS error
+* Fixed input, select, and textarea styles
+* Some small things
+(special thanks to VPenkov).
 
 ##WARRANTY
 
