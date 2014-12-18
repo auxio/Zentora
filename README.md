@@ -1,6 +1,6 @@
 #Zentora Theme  
 
-* Version: 1.0.6
+* Version: 1.0.5
 * [Forums](http://forums.sentora.org/showthread.php?tid=160) for comments, discussion, more information and community support.
 
 
@@ -68,10 +68,6 @@ If you have a question of found a bug you are free to comment in [this thread](h
 * Fixed input, select, and textarea styles
 * Some small things
 (special thanks to VPenkov).
-
-1.0.6
-* added colored icon for the protected directories module.
-* added meta to headers
 
 ##WARRANTY
 
