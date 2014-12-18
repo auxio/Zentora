@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Sentora &gt;  Login</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="/etc/styles/Zentora/global-css/bootstrap.min.css" rel="stylesheet">
 		<link href="/etc/styles/Zentora/css/default.css" rel="stylesheet" type="text/css">
