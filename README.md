@@ -71,7 +71,7 @@ If you have a question of found a bug you are free to comment in [this thread](h
 
 1.0.6
 * added colored icon for the protected directories module.
-* added meta to headers
+* added meta to headers (special thanks to TGates)
 
 ##WARRANTY
 
