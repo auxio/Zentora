@@ -42,6 +42,15 @@ table {
 	font-size: 16px;
 }
 
+.greyscale {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: gray;
+}
+
 /* making sure resizing does not break the navbar! */
 @media (max-width: 1200px) {
 
