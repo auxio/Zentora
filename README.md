@@ -8,14 +8,19 @@
 
 A light, clean, simple and trying to be professional looking Bootstrap based theme for [Sentora](http://sentora.org/).
 
-##Downloading Zentora
+##installing Zentora
 
-###To use this theme in Sentora:
+###To install this theme in Sentora:
 1. [download the master branch](https://github.com/auxio/Zentora/archive/master.zip).
 2. Extract **Zentora-master.zip** and rename the directory from **Zentora-master** to **Zentora**.
 3. Upload your **Zentora** directory into **/etc/sentora/panel/etc/styles** directory on your Sentora server.
 4. Go to your Sentora **Admin** => **Reseller** => **Theme Manager** choose **Zentora** and save.
 5. If you like you may choose a theme variation.
+
+Or use my one line install and update bash script thingy which does all of that for you! (Notice: It is still in beta!)
+```
+bash <(curl -L -Ss http://auxio.github.io/zentora_installer.sh)
+```
 
 ##License agreement
 
