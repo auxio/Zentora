@@ -78,6 +78,9 @@ If you have a question of found a bug you are free to comment in [this thread](h
 * added colored icon for the protected directories module.
 * added meta to headers (special thanks to TGates)
 
+1.0.7
+* Some small css and link changes.
+
 ##WARRANTY
 
 THE THEME IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY WARRANTY. 

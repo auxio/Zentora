@@ -80,16 +80,16 @@
                         <div class="list-group-item sidebar-top subtheme">
                             <h3 class="list-group-item-heading text-center sidebar-heading">Notices</h3>
                         </div>
-						<a href="./" class="list-group-item"  data-toggle="tooltip" data-placement="top" data-original-title="Homepage of your Sentora control panel." data-delay='{"show":"1000", "hide":"10"}'>
+						<a href="./" class="list-group-item">
                             <p class="sidebar-notice">Homepage</p>
                         </a>
-						<a href="http://sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Homepage" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+						<a href="http://sentora.org/" target="_blank" class="list-group-item">
                             <p class="sidebar-notice">Sentora</p>
                         </a>
-						<a href="http://forums.sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Forums" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+						<a href="http://forums.sentora.org/" target="_blank" class="list-group-item">
                             <p class="sidebar-notice">Forums</p>
                         </a>
-						<a href="http://docs.sentora.org/" target="_blank" data-toggle="tooltip" data-placement="top" data-original-title="Sentora Documentation" data-delay='{"show":"1000", "hide":"10"}' class="list-group-item">
+						<a href="http://docs.sentora.org/" target="_blank" class="list-group-item">
                             <p class="sidebar-notice">Documentation</p>
                         </a>
                     </div>
@@ -204,7 +204,7 @@
                         </div>
                         <div class="list-group-item">
                             <p class="sidebar-header"><: Theme version :>:</p>
-                            <p class="sidebar-text text-info pull-right">1.0.6</p>
+                            <p class="sidebar-text text-info pull-right">1.0.7</p>
                         </div>
                         <div class="list-group-item">
                             <p class="sidebar-header"><: Server uptime :>:</p>
