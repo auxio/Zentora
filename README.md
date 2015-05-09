@@ -81,6 +81,9 @@ If you have a question of found a bug you are free to comment in [this thread](h
 1.0.7
 * Some small css and link changes.
 
+1.0.8
+* Fixed some errors and paths.
+
 ##WARRANTY
 
 THE THEME IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY WARRANTY. 

@@ -204,7 +204,7 @@
                         </div>
                         <div class="list-group-item">
                             <p class="sidebar-header"><: Theme version :>:</p>
-                            <p class="sidebar-text text-info pull-right">1.0.7</p>
+                            <p class="sidebar-text text-info pull-right">1.0.8</p>
                         </div>
                         <div class="list-group-item">
                             <p class="sidebar-header"><: Server uptime :>:</p>

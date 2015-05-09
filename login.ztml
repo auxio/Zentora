@@ -4,15 +4,15 @@
 		<title>Sentora &gt;  Login</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="/etc/styles/Zentora/global-css/bootstrap.min.css" rel="stylesheet">
-		<link href="/etc/styles/Zentora/css/default.css" rel="stylesheet" type="text/css">
-		<link href="/etc/styles/Zentora/global-css/login.css" rel="stylesheet" type="text/css">
+		<link href="etc/styles/Zentora/global-css/bootstrap.min.css" rel="stylesheet">
+		<link href="etc/styles/Zentora/css/default.css" rel="stylesheet" type="text/css">
+		<link href="etc/styles/Zentora/global-css/login.css" rel="stylesheet" type="text/css">
 		
-		<script src="/etc/styles/Zentora/js/jquery-1.11.1.min.js"></script>
-		<script src="/etc/styles/Zentora/js/jquery.cookie.js"></script>
-		<script src="/etc/styles/Zentora/js/jquery.sortable-custom.js"></script>
-		<script src="/etc/styles/Zentora/js/spin.min.js"></script>
-		<script src="/etc/styles/Zentora/js/sentora.js"></script>
+		<script src="etc/styles/Zentora/js/jquery-1.11.1.min.js"></script>
+		<script src="etc/styles/Zentora/js/jquery.cookie.js"></script>
+		<script src="etc/styles/Zentora/js/jquery.sortable-custom.js"></script>
+		<script src="etc/styles/Zentora/js/spin.min.js"></script>
+		<script src="etc/styles/Zentora/js/sentora.js"></script>
 		
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
@@ -20,22 +20,22 @@
 		<![endif]-->
 	
 		<!-- Favicons -->
-		<link rel="apple-touch-icon-precomposed" sizes="57x57"   href="/etc/styles/Zentora/img/ico/apple-touch-icon-57-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/etc/styles/Zentora/img/ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72"   href="/etc/styles/Zentora/img/ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/etc/styles/Zentora/img/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="57x57"   href="etc/styles/Zentora/img/ico/apple-touch-icon-57-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="etc/styles/Zentora/img/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72"   href="etc/styles/Zentora/img/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="etc/styles/Zentora/img/ico/apple-touch-icon-144-precomposed.png">
 
-		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav16.png"  sizes="16x16"   type="image/png">
-		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav32.png"  sizes="32x32"   type="image/png">
-		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav48.png"  sizes="48x48"   type="image/png">
-		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav64.png"  sizes="64x64"   type="image/png">
-		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav128.png" sizes="128x128" type="image/png">
+		<link rel="icon" href="etc/styles/Zentora/img/ico/fav16.png"  sizes="16x16"   type="image/png">
+		<link rel="icon" href="etc/styles/Zentora/img/ico/fav32.png"  sizes="32x32"   type="image/png">
+		<link rel="icon" href="etc/styles/Zentora/img/ico/fav48.png"  sizes="48x48"   type="image/png">
+		<link rel="icon" href="etc/styles/Zentora/img/ico/fav64.png"  sizes="64x64"   type="image/png">
+		<link rel="icon" href="etc/styles/Zentora/img/ico/fav128.png" sizes="128x128" type="image/png">
 
-		<link rel="icon" href="/etc/styles/Zentora/img/ico/fav32.png">
+		<link rel="icon" href="etc/styles/Zentora/img/ico/fav32.png">
 		<!--[if IE]><link rel="shortcut icon" href="<# ui_tpl_assetfolderpath #>img/ico/favicon.ico"><![endif]-->
 
 		<meta name="msapplication-TileColor" content="#222222">
-		<meta name="msapplication-TileImage" content="/etc/styles/Zentora/img/ico/fav144.png">
+		<meta name="msapplication-TileImage" content="etc/styles/Zentora/img/ico/fav144.png">
 
 		<!-- Anti ClickJacking protection! -->
 		<style id="antiClickjack">body{display:none !important;}</style>
@@ -62,7 +62,7 @@
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="./" target="_self" class="navbar-brand"><img src="/etc/styles/Zentora/img/logos/sentora_logo.png" border="0" width="165" height="40"/></a>
+					<a href="./" target="_self" class="navbar-brand"><img src="etc/styles/Zentora/img/logos/sentora_logo.png" border="0" width="165" height="40"/></a>
 				</div>
 			</div>
 		</div>
@@ -110,7 +110,7 @@
 						?>
 					</div>
 					<div class="login-header">
-						<a href="./" target="_self" ><img src="/etc/styles/Zentora/img/logos/sentora_logo.png" border="0" width="165" height="40"/></a>
+						<a href="./" target="_self" ><img src="etc/styles/Zentora/img/logos/sentora_logo.png" border="0" width="165" height="40"/></a>
 					</div>
 					<div class="panel login-body row">
 						<?php if (isset($_GET['resetkey']) && ctype_alnum($_GET['resetkey'])) { ?>
@@ -200,16 +200,18 @@
 		
         <div class="navbar navbar-default navbar-fixed-bottom">
 			<div class="container">
-				<p class="navbar-text pull-left footerImg">Powered by <a href="http://sentora.org/" data-toggle="tooltip" data-placement="top" data-original-title="Sentora - The open-source web hosting panel." target="_blank"><img src="/etc/styles/Zentora/img/logos/sentora_logo_sig.png" border="0" width="105" height="25"/></a></p>
-				<p class="navbar-text pull-right footerImg">Theme by <a href="http://auxio.eu/" data-toggle="tooltip" data-placement="top" data-original-title="Zentora theme is powered by Auxio!" target="_blank"><img src="/etc/styles/Zentora/img/logos/auxio-logo.png" border="0" width="25" height="25"/></a></p>
+				<p class="navbar-text pull-left footerImg">Powered by <a href="http://sentora.org/" data-toggle="tooltip" data-placement="top" data-original-title="Sentora - The open-source web hosting panel." target="_blank"><img src="etc/styles/Zentora/img/logos/sentora_logo_sig.png" border="0" width="105" height="25"/></a></p>
+				<p class="navbar-text pull-right footerImg">Theme by <a href="http://auxio.eu/" data-toggle="tooltip" data-placement="top" data-original-title="Zentora theme is powered by Auxio!" target="_blank"><img src="etc/styles/Zentora/img/logos/auxio-logo.png" border="0" width="25" height="25"/></a></p>
 			</div>			
 		</div>
 		
-		<script src="/etc/styles/Zentora/js/bootstrap-transition.js"></script>
-		<script src="/etc/styles/Zentora/js/bootstrap-alert.js"></script>
-		<script src="/etc/styles/Zentora/js/bootstrap-popover.js"></script>
-		<script src="/etc/styles/Zentora/js/bootstrap-button.js"></script>
-		<!--<script src="<# ui_tpl_assetfolderpath #>js/init.js"></script>-->
+		<script src="etc/styles/Zentora/js/bootstrap-transition.js"></script>
+		<script src="etc/styles/Zentora/js/bootstrap-alert.js"></script>
+		<script src="etc/styles/Zentora/js/bootstrap-popover.js"></script>
+		<script src="etc/styles/Zentora/js/bootstrap-button.js"></script>
+		<script src="etc/styles/Zentora/js/bootstrap-tooltip.js"></script>
+		<script src="etc/styles/Zentora/js/bootstrap-popover.js"></script>
+		<!--<script src="etc/styles/Zentora/js/init.js"></script>-->
 		
 		<!-- Login form transitions -->
 		<script>
