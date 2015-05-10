@@ -1,12 +1,16 @@
 #Zentora Theme  
 
-* Version: 1.0.7
+* Version: 1.0.8
 * [Forums](http://forums.sentora.org/showthread.php?tid=160) for comments, discussion, more information and community support. 
 
 
 ##Description
 
 A light, clean, simple and trying to be professional looking Bootstrap based theme for [Sentora](http://sentora.org/).
+
+## Demo
+
+Check out this theme on the [Sentora demo](http://sentora.ga).
 
 ##installing Zentora
 
