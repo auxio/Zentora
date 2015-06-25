@@ -38,7 +38,7 @@ table {
 	margin-top: -7px;
 }
 
-.navbar a.dropdown-toggle, .active {
+.navbar a.dropdown-toggle, .navbar a.dropdown-toggle .active {
 	font-size: 16px;
 }
 
