@@ -932,3 +932,7 @@ li.module-box-body {
 .actions a {
     padding-top: 35px !important;
 }
+
+.navbar-nav > li > a {
+    line-height: 25px !important;
+}
