@@ -1,6 +1,6 @@
 #Zentora Theme  
 
-* Version: 1.0.9
+* Version: 1.0.10
 * [Forums](http://forums.sentora.org/showthread.php?tid=160) for comments, discussion, more information and community support. 
 
 
@@ -90,6 +90,9 @@ If you have a question of found a bug you are free to comment in [this thread](h
 
 1.0.9
 * Fixes small css class designator which clashes with tabs in modules.
+
+1.0.10
+* Fix nav background.
 
 ##WARRANTY
 

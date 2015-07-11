@@ -51,6 +51,9 @@ table {
     filter: gray;
 }
 
+.navbar-nav > li > a {
+	line-height: 25px !important; 
+}
 /* making sure resizing does not break the navbar! */
 @media (max-width: 1200px) {
 
@@ -64,10 +67,13 @@ table {
 		-webkit-transform: scale(0.7, 0.7);
 	}
 	
-	.nav>li>a{
+	.nav > li > a{
 		padding: 10px 10px;
 	}
 	
+	.navbar-nav > li > a {
+		line-height: 30px !important;
+	}
 }
 @media (max-width: 991px) {
 
@@ -79,7 +85,7 @@ table {
 		display: none;
 	}
 	
-	.nav>li>a{
+	.nav > li > a{
 		padding: 10px 10px;
 	}
 	
