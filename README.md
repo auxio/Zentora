@@ -94,6 +94,9 @@ If you have a question of found a bug you are free to comment in [this thread](h
 1.0.10
 * Fix nav background.
 
+1.0.11
+* Fixed some path errors.
+
 ##WARRANTY
 
 THE THEME IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL, BUT WITHOUT ANY WARRANTY. 
